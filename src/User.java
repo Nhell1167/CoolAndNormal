@@ -1,13 +1,7 @@
-public class User {
-    private String id, name;
-    public User(String id, String name){
-        this.id = id;
-        this.name = name;
+public abstract class User {
+    private UserAccount account;
+    public User(UserAccount account){
+        this.account = account;
     }
-    public String getId(){
-        return id;
-    }
-    public String getName(){
-        return name;
-    }
+    public abstract void displayDashboard();
 }
