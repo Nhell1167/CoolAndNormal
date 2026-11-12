@@ -6,7 +6,7 @@ A comprehensive **Gym Membership Management App** designed for Admins, Trainers,
 
 Below is the architectural breakdown, feature specifications, and data structure required to build and operate the platform.
 
-## 1. Role-Based User Workflows & Core Features
+## Role-Based User Workflows & Core Features
 ### Admin Portal (Operations & Oversight)
 The Admin dashboard acts as the command center for facility management, revenue tracking, and resource allocation.
 
