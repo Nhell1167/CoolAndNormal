@@ -2,12 +2,8 @@
 
 Team members:
 
-<enter name>
-  
-<enter name>
-  
-<enter name>
-  
-Juter R. Blanco
-
-Jeferson Lark L. Manatad
+Knowell M. Lawas <br>
+Nhelmar P. Pahila <br>
+Vince Cyrel A. Jurado <br>
+Juter R. Blanco <br>
+Jeferson Lark L. Manatad <br>
