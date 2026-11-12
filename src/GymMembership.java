@@ -1,22 +1,32 @@
 import javax.swing.*;
+import java.awt.Dimension;
 
-public class GymMembership extends JFrame{
-    private JTextField tfName;
-    private JTextField tfPassword;
+public class GymMembership extends JFrame {
+
     private JPanel pnlMain;
-    private JLabel lblName;
-    private JLabel lblPassword;
+    private JTextField tfName;
+    private JPasswordField pfPassword;
     private JButton btnLogin;
     private JButton btnRegister;
+    private JLabel lblName;
+    private JLabel lblPassword;
+    private JPanel pnlLogin;
+
+    public GymMembership() {
+
+        setContentPane(pnlMain);
+
+        setTitle("Gym Membership Login");
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+        pnlLogin.setPreferredSize(new Dimension(400, 300));
+    }
 
     public static void main(String[] args) {
+
         SwingUtilities.invokeLater(() -> {
             GymMembership app = new GymMembership();
-            app.setContentPane(app.pnlMain);
-            app.setSize(500, 250);
-            app.setDefaultCloseOperation(EXIT_ON_CLOSE);
-            app.setTitle("Login Form");
-            app.setLocationRelativeTo(null);
             app.setVisible(true);
         });
     }
