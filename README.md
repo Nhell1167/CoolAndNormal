@@ -1,6 +1,6 @@
-# 🏋️‍♂️ Gym Membership App
+# Gym Membership App
 
-Team members 🫸💥🫷: 
+Team members: 
 
 Knowell M. Lawas <br>
 Nhelmar P. Pahila <br>
