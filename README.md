@@ -1,12 +1,6 @@
 # Gym Membership App
 
-Team members: 
-
-Knowell M. Lawas <br>
-Nhelmar P. Pahila <br>
-Vince Cyrel A. Jurado <br>
-Juter R. Blanco <br>
-Jeferson Lark L. Manatad <br>
+By: Knowell M. Lawas | Nhelmar P. Pahila | Vince Cyrel A. Jurado | Juter R. Blanco | Jeferson Lark L. Manatad <br>
 
 A comprehensive **Gym Membership Management App** designed for Admins, Trainers, and Members unifies facility operations, coaching workflows, and personal fitness tracking into a single system.
 
