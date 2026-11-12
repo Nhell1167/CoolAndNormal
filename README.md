@@ -1,7 +1,6 @@
 # 🏋️‍♂️ Gym Membership App
 
-Team members:
-
+Team members 🫸💥🫷: 
 Knowell M. Lawas <br>
 Nhelmar P. Pahila <br>
 Vince Cyrel A. Jurado <br>
