@@ -8,7 +8,7 @@ By: Knowell M. Lawas | Nhelmar P. Pahila | Vince Cyrel A. Jurado | Juter R. Blan
 </p>
 
 ## Patch Notes 
-#### (V.1.1)
+#### V.1.1
 -Removed admin class
 -Added new classes to the class diagram
 -Added Navigable Systems
