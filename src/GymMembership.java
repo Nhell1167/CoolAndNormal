@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.Dimension;
+import java.io.*;
 
 public class GymMembership extends JFrame {
 
@@ -22,11 +23,33 @@ public class GymMembership extends JFrame {
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         pnlLogin.setPreferredSize(new Dimension(400, 300));
 
+        btnLogin.addActionListener(e->{
+            try(BufferedReader reader= new BufferedReader(new FileReader("RegisteredUsers.txt"))){
+                String line;
+                while((line = reader.readLine())!= null) {
+                    String[] verify = line.split(" ");
+                    if (verify[0].equals(tfName.getText()) && verify[1].equals(pfPassword.getText())) {
+                        DashBoard board = new DashBoard();
+                        board.setVisible(true);
+
+                        this.dispose();
+                        return;
+                    }
+                }
+                JOptionPane.showMessageDialog(pnlMain, "Account Is Not Registered");
+                tfName.setText("");
+                pfPassword.setText("");
+            }catch(IOException v){
+                v.printStackTrace();
+            }
+
+        });
+
         btnRegister.addActionListener(e -> {
             MemberRegister register = new MemberRegister();
             register.setVisible(true);
 
-            this.dispose(); // Close the login form
+            this.dispose();
         });
     }
 

@@ -1,6 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.Dimension;
+import java.io.*;
 
 public class MemberRegister extends JFrame{
     private JPanel pnlMain;
@@ -33,10 +34,22 @@ public class MemberRegister extends JFrame{
             if(!str.toString().equalsIgnoreCase(st.toString())){
                 JOptionPane.showMessageDialog(pnlMain, "Mismatch Password!");
                 pfPass1.setText("");
-                pfPass1.setText("");
+                pfPass2.setText("");
             }else{
+                try(BufferedWriter writer = new BufferedWriter(new FileWriter("RegisteredUsers.txt", true))){
+                    writer.write(tfEmail.getText() + " " + pfPass1.getText());
+                    writer.write("\n");
+                }catch(IOException v){
+                    v.printStackTrace();
+                }
                 SwingUtilities.invokeLater(()->{});
+                GymMembership login = new GymMembership();
+                login.setVisible(true);
+                this.dispose(); // Close the login form
+
             }
+
+
 
 
         });
