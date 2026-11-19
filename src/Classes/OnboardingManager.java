@@ -1,3 +1,5 @@
+package Classes;
+
 public class OnboardingManager {
     public UserAccount createUserAccount(String name, String email,String pass){
         String id = ""; //generate id

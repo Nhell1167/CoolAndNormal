@@ -12,16 +12,6 @@ A comprehensive **Gym Membership Management App** designed for Admins, Trainers,
 Below is the architectural breakdown, feature specifications, and data structure required to build and operate the platform.
 
 ## About the Project
-### Admin Portal (Operations & Oversight)
-The Admin dashboard acts as the command center for facility management, revenue tracking, and resource allocation.
-
-- **User Management (Members & Trainers):** Full CRUD (Create, Read, Update, Delete) capabilities. Admins can onboard new staff, suspend or reactivate member accounts, and manage user profiles.
-
-- **Membership Plan Builder:** Create, edit, and archive subscription tiers (e.g., Basic Monthly, Annual VIP, 10-Session PT Pack). Configurable attributes include pricing, billing cycle, duration, and access privileges.
-
-- **Trainer Assignment Engine:** Assign newly registered members to available trainers based on capacity or specialty, and handle reassignments seamlessly if a trainer goes on leave or a member's goals shift.
-
-- **Gym Analytics & Statistics:** High-level KPI cards and trend charts displaying active vs. expired memberships, monthly recurring revenue (MRR), trainer-to-member ratios, and overall facility check-in or workout completion rates.
 ### Trainer Portal (Coaching & Programming)
 The Trainer interface focuses on client management, program design, and progress monitoring.
 
@@ -50,9 +40,9 @@ The Member experience is streamlined for mobile usability on the gym floor.
 ### System Architecture & Domain Model
 The application is built around a strict object-oriented domain model designed for modularity and role-based separation of concerns:
 
-* **Role-Based Inheritance (`User` Hierarchy):** `Admin`, `Member`, and `Trainer` inherit from an abstract `User` base class, keeping shared attributes unified while isolating role-specific operations (such as trainer assignment vs. workout creation).
+* **Role-Based Inheritance (`User` Hierarchy):** `Member`, and `Trainer` inherit from an abstract `User` base class, keeping shared attributes unified while isolating role-specific operations (such as trainer assignment vs. workout creation).
 * **Account & Onboarding Decoupling:** Authentication credentials (`UserAccount`) and account provisioning (`OnboardingManager`) are separated from core domain entities to keep business logic decoupled from authentication workflows.
-* **Member Profiling & Enums:** Each `Member` is composed with a `MemberProfile` containing `DemographicMetrics` (age, weight, height), alongside standardized `FitnessSpecialization` (`WEIGHT_LOSS`, `MUSCLE_GROWTH`, `ENDURANCE`) and `MembershipPlan` (`BRONZE`, `SILVER`, `GOLD`) enumerations.
+* **Member Profiling & Enums:** Each `Member` is composed with a `MemberProfile` containing `DemographicMetrics` (sex, age, weight, height), alongside standardized `FitnessSpecialization` (`WEIGHT_LOSS`, `MUSCLE_GROWTH`, `ENDURANCE`) and `MembershipPlan` (`BRONZE`, `SILVER`, `GOLD`) enumerations.
 * **Hierarchical Workout Composition:** Programming follows a nested composition chain—`WorkoutPlan` ➜ `DailyRoutine` ➜ `ExerciseItem`—allowing trainers to structure multi-day microcycles down to granular sets, reps, rest intervals, and coaching notes. <br/>
 
 ![](/class_diagram.png)

@@ -1,3 +1,5 @@
+package Classes;
+
 public class ExerciseItem {
     private String exerciseName, notes;
     private int targetSets, targetReps, restTimeSeconds;

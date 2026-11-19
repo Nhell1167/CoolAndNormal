@@ -1,3 +1,5 @@
+package Classes;
+
 public class DemographicMetrics {
     private int age;
     private float weght, height;

@@ -1,3 +1,5 @@
+package Classes;
+
 public class UserAccount {
     protected String userId;
     private String fullName, email, password;
