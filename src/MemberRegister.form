@@ -18,12 +18,12 @@
         </constraints>
         <properties/>
       </component>
-      <component id="7fb7d" class="javax.swing.JCheckBox" binding="cbConfirmPass">
+      <component id="7fb7d" class="javax.swing.JCheckBox" binding="cbshow">
         <constraints>
           <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Confirm Password"/>
+          <text value="Show Password"/>
         </properties>
       </component>
       <component id="1afb4" class="javax.swing.JLabel">

@@ -1,12 +1,11 @@
 import javax.swing.*;
-import java.awt.*;
 import java.awt.Dimension;
 import java.io.*;
 
 public class MemberRegister extends JFrame{
     private JPanel pnlMain;
     private JTextField tfEmail;
-    private JCheckBox cbConfirmPass;
+    private JCheckBox cbshow;
     private JButton btnRegister;
     private JPasswordField pfPass1;
     private JPasswordField pfPass2;
@@ -18,6 +17,16 @@ public class MemberRegister extends JFrame{
         setVisible(true);
         pfPass1.setEchoChar('*');
         pfPass2.setEchoChar('*');
+
+        cbshow.addActionListener(e -> {
+            if (cbshow.isSelected()) {
+                pfPass1.setEchoChar((char) 0);
+                pfPass2.setEchoChar((char) 0);
+            } else {
+                pfPass1.setEchoChar('*');
+                pfPass2.setEchoChar('*');
+            }
+        });
 
         btnRegister.addActionListener(e->{
             char[] p1 = pfPass1.getPassword();
