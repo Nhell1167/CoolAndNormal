@@ -1,3 +1,5 @@
+package Classes;
+
 public class MemberProfile {
     private FitnessSpecialization fitnessGoal;
     private DemographicMetrics demographicMetrics;
