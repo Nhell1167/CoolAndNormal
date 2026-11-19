@@ -7,6 +7,10 @@ By: Knowell M. Lawas | Nhelmar P. Pahila | Vince Cyrel A. Jurado | Juter R. Blan
   <img src="https://img.shields.io/badge/Version_Control-Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
 </p>
 
+A comprehensive **Gym Membership Management App** designed for Admins, Trainers, and Members unifies facility operations, coaching workflows, and personal fitness tracking into a single system.
+
+Below is the architectural breakdown, feature specifications, and data structure required to build and operate the platform.
+
 ## Patch Notes
 #### V 1.0
  - Created the github repository and added the members
@@ -22,9 +26,7 @@ By: Knowell M. Lawas | Nhelmar P. Pahila | Vince Cyrel A. Jurado | Juter R. Blan
  - Optimized pop-ups and file writing systems
 
 
-A comprehensive **Gym Membership Management App** designed for Admins, Trainers, and Members unifies facility operations, coaching workflows, and personal fitness tracking into a single system.
 
-Below is the architectural breakdown, feature specifications, and data structure required to build and operate the platform.
 
 ## About the Project
 ### Trainer Portal (Coaching & Programming)
