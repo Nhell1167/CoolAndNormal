@@ -9,17 +9,17 @@ By: Knowell M. Lawas | Nhelmar P. Pahila | Vince Cyrel A. Jurado | Juter R. Blan
 
 ## Patch Notes
 #### V 1.0
--Created the github repository and added the members
--Created the README
--Created log in page
--Created sign up page
--Created class diagram
+ - Created the github repository and added the members
+ - Created the README
+ - Created log in page
+ - Created sign up page
+ - Created class diagram
 #### V 1.1
--Added Patch Notes to the README (tell me if e remove)
--Removed admin class
--Added new classes to the class diagram
--Added Navigable Systems
--Optimized pop-ups and file writing systems
+ - Added Patch Notes to the README (tell me if e remove)
+ - Removed admin class
+ - Added new classes to the class diagram
+ - Added Navigable Systems
+ - Optimized pop-ups and file writing systems
 
 
 A comprehensive **Gym Membership Management App** designed for Admins, Trainers, and Members unifies facility operations, coaching workflows, and personal fitness tracking into a single system.
