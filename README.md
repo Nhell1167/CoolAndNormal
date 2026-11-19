@@ -7,7 +7,7 @@ By: Knowell M. Lawas | Nhelmar P. Pahila | Vince Cyrel A. Jurado | Juter R. Blan
   <img src="https://img.shields.io/badge/Version_Control-Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git">
 </p>
 
-#### Patch Notes (V.1.1):
+### Patch Notes (V.1.1):
 -Removed admin class
 -Added new classes to the class diagram
 -Added Navigable Systems
