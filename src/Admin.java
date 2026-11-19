@@ -1,6 +1,4 @@
-<<<<<<< HEAD
-public class Admin {
-=======
+
 import java.util.List;
 
 public class Admin extends User{
@@ -31,5 +29,5 @@ public class Admin extends User{
     public void displayDashboard() {
 
     }
->>>>>>> origin/master
+
 }

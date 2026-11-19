@@ -1,4 +1,6 @@
 import javax.swing.*;
+import java.awt.*;
+import java.awt.Dimension;
 
 public class MemberRegister extends JFrame{
     private JPanel pnlMain;
@@ -35,9 +37,12 @@ public class MemberRegister extends JFrame{
             }else{
                 SwingUtilities.invokeLater(()->{});
             }
+
+
         });
 
-
+        setExtendedState(JFrame.MAXIMIZED_BOTH);
+        pnlMain.setPreferredSize(new Dimension(400, 300));
     }
 
 

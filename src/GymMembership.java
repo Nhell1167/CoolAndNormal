@@ -21,6 +21,13 @@ public class GymMembership extends JFrame {
 
         setExtendedState(JFrame.MAXIMIZED_BOTH);
         pnlLogin.setPreferredSize(new Dimension(400, 300));
+
+        btnRegister.addActionListener(e -> {
+            MemberRegister register = new MemberRegister();
+            register.setVisible(true);
+
+            this.dispose(); // Close the login form
+        });
     }
 
     public static void main(String[] args) {
